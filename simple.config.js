@@ -12,11 +12,21 @@ module.exports = {
 
   module: {
     rules: [
+      // rule to test for images
       {
         // test for any import having .png or .jpg of any letter case at the end of it.
         test: /\.(png|jpg)$/i,
         type: 'asset/resource', //its an asset file treat it different.
       },
+
+      // rule to test for imported css file
+      {
+        // test for any .css import regardless of the letter cases
+        test: /\.css/i,
+        // then use these loaders.
+        //  use work in the reverse order first, css-loader then style-loader
+        use: ['style-loader', 'css-loader'],
+      }
     ],
   },
 };

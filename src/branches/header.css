@@ -7,7 +7,6 @@
 }
 
 .main-header p {
-  opacity: 0.6;
-  border-width: 2px;
   border-bottom: 1px solid;
+  opacity: 0.6;
 }
