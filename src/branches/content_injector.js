@@ -1,3 +1,5 @@
+import './content.css';
+
 const content_injector = (content) => {
   const p_el = document.createElement('p');
 

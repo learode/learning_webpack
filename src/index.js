@@ -1,6 +1,7 @@
 import content_injector from './branches/content_injector';
 import header_injector from './branches/header_injector';
 import img_injector from './branches/img_injector';
+import './index.css';
 
 const content = {
   title: {
